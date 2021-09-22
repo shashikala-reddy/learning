@@ -1,0 +1,37 @@
+Compile : gcc -g Helloworld.c -o Hello
+
+1) run   (r)  ==  ./a.out   == start + continue
+2) quit
+3) start   ->  main()  -> breakpoint
+4) list (l)   ->  10 lines of source code (defualt)
+5) next  (n)  -> executes next instruction
+6) print var  (p)
+7) set history filename hist.txt
+8) set history save on
+9) step  (s)  -> func call 
+10) until  (u) ->  comes out of loop
+11) break 22  (b line.no)
+12) info b
+13) continue
+14) disable <break id>
+15) enable <break id>
+16) set var n = 7
+17) Enter key  -> repeat previous command
+18) delete b-id
+19) delete  -> delete all breakpoints
+20) watch var_name  (context)
+21) disable <watch id>
+22) enable <watch id>
+23) whatis var
+24) reverse-next   -> Target native does not support this command. [Error]
+25) display var-name
+26) undisplay var-id
+27) set listsize <num>
+28) print *a@3    -> value of array elements in first  3 indices
+29) print/d n     -> prints value of n
+30) disass func_name
+31) info frame   -> function stack info
+32) up
+33) down
+34) tui enable
+35) tui disable
