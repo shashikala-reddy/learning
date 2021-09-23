@@ -125,6 +125,11 @@ static int __init my_simpledriver_init(void)
 	if(char_thread)
 	{
 		printk(KERN_INFO" create the thread");
+		printk(KERN_INFO"thread status is %d",*char_thread);
+		printk(KERN_INFO"pid is:%d",char_thread->pid);
+		printk(KERN_INFO"tgid is:%d",char_thread->tgid);
+		printk(KERN_INFO"priority is:%d",char_thread->prio);
+		printk(KERN_INFO"status is:%d",char_thread->thread_info.status);
 	}
 	else 
 	{
